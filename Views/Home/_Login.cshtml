@@ -1,0 +1,29 @@
+@model Login
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 class="text-center">LogIn</h2>
+    <hr>
+        <form asp-action="Login" asp-controller="Home" method="POST">
+            <div class="form-group">
+                <label asp-for="LoginEmail" class="col-4"></label>
+                <span asp-validation-for="LoginEmail" class="text-danger"></span>
+                <input asp-for="LoginEmail" class="form-control col-8">
+            </div>
+            <div class="form-group">
+                <label asp-for="LoginPassword" class="col-4"></label>
+                <span asp-validation-for="LoginPassword" class="text-danger"></span>
+                <input asp-for="LoginPassword" class="form-control col-8">
+            </div>
+            <div class="button">
+                <input type="submit" class="btn btn-secondary" value="Login">
+            </div>
+        </form>
+</body>
+</html>
