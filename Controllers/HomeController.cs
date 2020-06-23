@@ -111,6 +111,16 @@ namespace Casino.Controllers
             return View("Dashboard");
         }
 
+        [HttpGet("blackjack")]
+        public IActionResult BlackJack()
+        {
+            if (!isLoggedIn)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Blackjack");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
