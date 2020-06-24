@@ -45,19 +45,41 @@
             }
         }
 
-        var player
+        var player = new Array();
+        function createplayer(num)
+        {
+            players = new Array();
+            for(var i = 1; i <= num; i++)
+            {
+                var hand = new Array();
+                var player = {Name : @Context.Session.GetString("FirstName"), ID : @Context.Session.GetInt32("UserId"), Points: 0, Hand: hand};
+                players.push(player);
+            }
+        }
+
+
     </script>
-    <embed src="" type="">
-    <div class="container">
-        <h1 class="text-center">Welcome to Blackjack, (Users Name)</h1>
-    </div>
-    <div class="blackjackbody">
-        <img src="https://cdn2.vectorstock.com/i/1000x1000/07/91/blackjack-table-vector-6320791.jpg" alt="">
-    </div>
-    <div class="buttons text-center">
-        <a href="" class="btn btn-secondary ml-5 mr-5" onclick="stay()">Stay</a>
-        <a href="" class="btn btn-secondary ml-2 mr-5" onclick="DealCards()">Deal</a>
-        <a href="" class="btn btn-secondary mr-5" onclick="Hit()">Hit</a>
+    <h1 class="text-center">Welcome to Blackjack @Context.Session.GetString("FirstName")</h1>
+    <div class="blackjackcontainer">
+        <div class="body text-center">
+            <div class="row DealerHand" id="Dealer">
+                <h3>Dealers Hand</h3>
+                <div class="col-1 Cards" id="dealercard1"></div>
+                <div class="col-1 Cards" id="dealercard2"></div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row PlayerHand" id="Player">
+                <h3>@Context.Session.GetString("FirstName")'s Hand</h3>
+                <div class="col-1 Cards" id="playercard1"></div>
+                <div class="col-1 Cards" id="playercard2"></div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <div class="buttons text-center">
+            <a href="" class="btn btn-secondary ml-5 mr-5" onclick="stay()">Stay</a>
+            <a href="" class="btn btn-secondary ml-2 mr-5" onclick="DealCards()">Deal</a>
+            <a href="" class="btn btn-secondary mr-5" onclick="Hit()">Hit</a>
+        </div>
     </div>
 </body>
 </html> 

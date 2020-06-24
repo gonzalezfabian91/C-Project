@@ -3,6 +3,16 @@
     padding: 0px;
 }
 
-.blackjackbody img{
-    margin-left: 80px;
+.blackjackcontainer{
+    background-image: url("https://pilot.flyingplaza.com/gamefiles/Classic/Multiplayer-Blackjack/img/table_blackjack.png");
+    height: 613px;
+    width: 1024px;
+}
+
+.body{
+    height: 557px;
+}
+
+#Dealer img{
+    width: 100px;
 }
