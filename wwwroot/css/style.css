@@ -16,7 +16,29 @@
 .Cards{
     color: white;
     margin: 1px;
+    display: inline-block;
+    padding: 5px;
 }
-.DealerHand{
+.dealer{
     margin-top: 40px;
+    padding: 5px;
+    margin-left: 20px;
+}
+.your{
+    margin-top: 40px;
+    padding: 5px;
+    margin-left: 20px;
+}
+.Space{
+    height: 300px;
+}
+
+
+#DealerHand{
+    padding-top: 100px;
+    padding-left: 30px;
+}
+#PlayerHand{
+    padding-top: 100px;
+    padding-left: 30px;
 }
