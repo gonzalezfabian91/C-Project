@@ -62,3 +62,4 @@ C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Casino.dll
 C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Casino.pdb
 C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Casino.csproj.CopyComplete
 C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Razor\Views\Home\Dashboard.g.cshtml.cs
+C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Razor\Views\Home\Blackjack.g.cshtml.cs
