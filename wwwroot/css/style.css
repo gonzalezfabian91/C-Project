@@ -14,36 +14,35 @@
     color: white;
 }
 .Cards{
-    color: white;
+    color: black;
     margin: 1px;
     display: inline-block;
     padding: 5px;
     
 }
-.Cards img{
-    height: 80px;
-    width: 65px;
+.Cards h1{
+    font-size: 100px;
 }
 
 
 
 .dealer{
-    margin-top: 40px;
+    margin-top: 70px;
     padding: 5px;
     margin-left: 20px;
 }
 .your{
-    margin-top: 40px;
+    margin-top: 20px;
     padding: 5px;
     margin-left: 20px;
 }
 .Space{
-    height: 300px;
+    height: 40px;
 }
 
 
 #DealerHand{
-    padding-top: 100px;
+    padding-top: 120px;
     padding-left: 30px;
 }
 #PlayerHand{
