@@ -110,6 +110,11 @@ namespace Casino.Controllers
             }
             return View("Dashboard");
         }
+        [HttpGet("SevenCardStud")]
+        public IActionResult SevenCardStud()
+        {
+            return View ("SevenCardStud");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
