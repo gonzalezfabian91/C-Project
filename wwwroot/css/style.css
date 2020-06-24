@@ -1,3 +1,22 @@
+
 .SevenContainer {
-    background-image: url(https://thumbs.dreamstime.com/b/realistic-poker-table-d-rendered-scene-48173745.jpg);
+    background: url(https://thumbs.dreamstime.com/b/realistic-poker-table-d-rendered-scene-48173745.jpg) no-repeat center center fixed; 
+    background-size: cover;
+    height: 800px;
+}
+
+.dealerhandtext {
+    text-align: center;
+    color: white;
+}
+.yourhandtext {
+    text-align: center;
+    color: white;
+}
+.Cards{
+    color: white;
+    margin: 1px;
+}
+.DealerHand{
+    margin-top: 40px;
 }

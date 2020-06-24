@@ -116,5 +116,11 @@ namespace Casino.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [HttpGet("SevenCardStud")]
+        public IActionResult SevenCardStud()
+        {
+            return View ("SevenCardStud");
+        }
     }
 }
