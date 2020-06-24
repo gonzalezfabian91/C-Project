@@ -3001,6 +3001,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\bryce\\Documents\\Projects\\C-Project\\Views\\Home\\SevenCardStud.cshtml",
+      "TargetPath": "Views\\Home\\SevenCardStud.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\bryce\\Documents\\Projects\\C-Project\\Views\\Home\\_Login.cshtml",
       "TargetPath": "Views\\Home\\_Login.cshtml",
       "FileKind": "mvc"
