@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj": {}
+    "c:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj": {
+    "c:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj",
+        "projectUniqueName": "c:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj",
         "projectName": "Casino",
-        "projectPath": "C:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj",
+        "projectPath": "c:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj",
         "packagesPath": "C:\\Users\\Fabian\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fabian\\Desktop\\Casino\\obj\\",
+        "outputPath": "c:\\Users\\Fabian\\Desktop\\Casino\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -2971,6 +2971,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\SevenCardStud.cshtml",
+      "TargetPath": "Views\\Home\\SevenCardStud.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\_Register.cshtml",
       "TargetPath": "Views\\Home\\_Register.cshtml",
       "FileKind": "mvc"
