@@ -65,6 +65,7 @@ C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Razor\Views\Home\Dashboar
 <<<<<<< HEAD
 C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Razor\Views\Home\Blackjack.g.cshtml.cs
 =======
+>>>>>>> 1ae0069cb7ee0fa597ca80aba94c57ad98a881c0
 C:\Users\bryce\Documents\Projects\C-Project\bin\Debug\netcoreapp2.2\Casino.deps.json
 C:\Users\bryce\Documents\Projects\C-Project\bin\Debug\netcoreapp2.2\Casino.runtimeconfig.json
 C:\Users\bryce\Documents\Projects\C-Project\bin\Debug\netcoreapp2.2\Casino.runtimeconfig.dev.json
@@ -81,6 +82,7 @@ C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Casino.Assem
 C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Casino.TagHelpers.input.cache
 C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Casino.TagHelpers.output.cache
 C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Casino.RazorCoreGenerate.cache
+C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Razor\Views\Home\Blackjack.g.cshtml.cs
 C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Razor\Views\Home\Dashboard.g.cshtml.cs
 C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
 C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Razor\Views\Home\SevenCardStud.g.cshtml.cs
@@ -99,3 +101,6 @@ C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Casino.dll
 C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Casino.pdb
 C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Casino.csproj.CopyComplete
 >>>>>>> f49a7b14745f5e89dfbb1a25389ec310ec00ba3e
+C:\Users\bryce\Documents\Projects\C-Project\obj\Debug\netcoreapp2.2\Razor\Views\Home\FiveCard.g.cshtml.cs
+C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Razor\Views\Home\FiveCard.g.cshtml.cs
+C:\Users\Fabian\Desktop\Casino\obj\Debug\netcoreapp2.2\Razor\Views\Home\SevenCardStud.g.cshtml.cs

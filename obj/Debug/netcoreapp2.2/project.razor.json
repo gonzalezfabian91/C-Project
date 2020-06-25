@@ -3006,6 +3006,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\FiveCard.cshtml",
+      "TargetPath": "Views\\Home\\FiveCard.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\Blackjack.cshtml",
       "TargetPath": "Views\\Home\\Blackjack.cshtml",
       "FileKind": "mvc"
