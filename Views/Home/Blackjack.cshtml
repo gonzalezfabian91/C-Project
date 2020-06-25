@@ -116,13 +116,42 @@
                         DealBlackJack();
                         $(".dealbutton").html("");
                         $(".staybutton").html("<button style='button' class='btn btn-secondary' id='Stay'>Stay</button>");
-                        $(".hitbutton").html("<button style='button' class='btn btn-secondary' id='Hit'>Hit</button>");
+                        $(".hitbutton").html("<button style='button' class='ml-2 btn btn-secondary' id='Hit'>Hit</button>");
 
-                        $("#Hit").on('click',function(){
+                        $("#Hit").click(function(){
                             let temp5 = Deal();
+                            $(".hitbutton").html("");
+                            $(".hitbutton").html("<button style='button' class='ml-2 btn btn-secondary' id='Hit'>Hit</button>");
                             $("#playercard3").html('<h1>'+ temp5.Front +'</h1>')
 
                             playerblackjack.push(temp5);
+
+                            $("#Hit").click(function(){
+                                let temp6 = Deal();
+                                $(".hitbutton").html("");
+                                $(".hitbutton").html("<button style='button' class='ml-2 btn btn-secondary' id='Hit'>Hit</button>");
+                                $("#playercard4").html('<h1>'+ temp6.Front +'</h1>')
+
+                                playerblackjack.push(temp6);
+
+                                $("#Hit").click(function(){
+                                    let temp7 = Deal();
+                                    $(".hitbutton").html("");
+                                    $(".hitbutton").html("<button style='button' class='ml-2 btn btn-secondary' id='Hit'>Hit</button>");
+                                    $("#playercard5").html('<h1>'+ temp7.Front +'</h1>')
+
+                                    playerblackjack.push(temp7);
+
+                                    $("#Hit").click(function(){
+                                        let temp8 = Deal();
+                                        $(".hitbutton").html("");
+                                        $(".hitbutton").html("<button style='button' class='ml-2 btn btn-secondary' id='Hit'>Hit</button>");
+                                        $("#playercard6").html('<h1>'+ temp8.Front +'</h1>')
+
+                                        playerblackjack.push(temp8);
+                                    });
+                                });
+                            });
                         });
                     });
             });
@@ -133,19 +162,22 @@
         <div class="body text-center">
             <h3 class=" text-white dealertext">Dealers Hand</h3>
             <div class="row DealerHand" id="Dealer">
-                <div class=" text-white col-1 Cards" id="dealercard1"></div>
-                <div class=" text-white col-1 Cards" id="dealercard2"></div>
+                <div class="ml-5 text-white col-1 Cards" id="dealercard1"></div>
+                <div class="text-white col-1 Cards" id="dealercard2"></div>
                 <div class="col-2"></div>
             </div>
             <h3 class="text-white playertext">Players Hand</h3>
             <div class="row PlayerHand" id="Player">
-                <div class=" text-white col-1 Cards" id="playercard1"></div>
-                <div class=" text-white col-1 Cards" id="playercard2"></div>
-                <div class=" text-white col-1 Cards" id="playercard3"></div>
+                <div class="ml-5 text-white col-1 Cards" id="playercard1"></div>
+                <div class="text-white col-1 Cards" id="playercard2"></div>
+                <div class="text-white col-1 Cards" id="playercard3"></div>
+                <div class="text-white col-1 Cards" id="playercard4"></div>
+                <div class="text-white col-1 Cards" id="playercard5"></div>
+                <div class="text-white col-1 Cards" id="playercard6"></div>
                 <div class="col-2"></div>
             </div>
         </div>
-        <div class="buttons text-center">
+        <div class="buttons row text-center">
             <div class="bet">
                 <button style="button" class="btn btn-secondary" id="Bet">Bet</button>
             </div>
