@@ -95,24 +95,36 @@
                 
                 let temp1 = Deal()
                 let temp2 = Deal()
+                let temp3 = Deal()
+                let temp4 = Deal()
 
-                // $("#playercard1").html('<h1>'+ temp1.Front +'</h1>');
-                //$("#playercard2").html('<h1>'+ temp1.Front +'</h1>');
-                //$("dealercard1").html('<h1>'+ temp1.Back +'</h1>');
-                //$("dealercard2").html('<h1>'+ temp1.Front +'</h1>');
-                
-                for(var i = 1; i < 3; i++){
-                    let temp1 = Deal()
-                    let temp2 = Deal()
-                    $("#playercard" + i + "").html('<h1>'+ temp1.Front +'</h1>');
-                    $("#dealercard"+ i + "").html('<h1>'+temp2.Back+'</h1>');
-                    dealerblackjack += temp2;
-                    playerblackjack += temp1;
-                }
+                $("#playercard1").html('<h1>'+ temp1.Front +'</h1>');
+                $("#playercard2").html('<h1>'+ temp2.Front +'</h1>');
+                $("#dealercard1").html('<h1>'+ temp3.Back +'</h1>');
+                $("#dealercard2").html('<h1>'+ temp4.Front +'</h1>');
+                playerblackjack.push(temp1);
+                playerblackjack.push(temp2);
+                dealerblackjack.push(temp3);
+                dealerblackjack.push(temp4);
+
             }
+            $('#Bet').on('click',function(){
+                $('.dealbutton').html("<button style='button' class='btn btn-secondary' id='Deal'>Deal</button>");
+                $(".bet").html("");
 
-            $('#Deal').on('click',()=>{
-                DealBlackJack();
+                    $("#Deal").on('click',function(){
+                        DealBlackJack();
+                        $(".dealbutton").html("");
+                        $(".staybutton").html("<button style='button' class='btn btn-secondary' id='Stay'>Stay</button>");
+                        $(".hitbutton").html("<button style='button' class='btn btn-secondary' id='Hit'>Hit</button>");
+
+                        $("#Hit").on('click',function(){
+                            let temp5 = Deal();
+                            $("#playercard3").html('<h1>'+ temp5.Front +'</h1>')
+
+                            playerblackjack.push(temp5);
+                        });
+                    });
             });
         });
     </script>
@@ -129,13 +141,17 @@
             <div class="row PlayerHand" id="Player">
                 <div class=" text-white col-1 Cards" id="playercard1"></div>
                 <div class=" text-white col-1 Cards" id="playercard2"></div>
+                <div class=" text-white col-1 Cards" id="playercard3"></div>
                 <div class="col-2"></div>
             </div>
         </div>
         <div class="buttons text-center">
-            <button id="Stay">Stay</button>
-            <button id="Deal">Deal</button>
-            <button id="Hit">Hit</button>
+            <div class="bet">
+                <button style="button" class="btn btn-secondary" id="Bet">Bet</button>
+            </div>
+            <div class="staybutton"></div>
+            <div class="dealbutton"></div>
+            <div class="hitbutton"></div>
         </div>
     </div>
 </body>
