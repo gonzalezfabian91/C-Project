@@ -2,7 +2,7 @@
 .SevenContainer {
     background: url(https://thumbs.dreamstime.com/b/realistic-poker-table-d-rendered-scene-48173745.jpg) no-repeat center center fixed; 
     background-size: cover;
-    height: 800px;
+    height: 600px;
 }
 
 .dealerhandtext {
@@ -37,7 +37,7 @@
     margin-left: 20px;
 }
 .Space{
-    height: 40px;
+    height:80px;
 }
 
 
@@ -46,6 +46,5 @@
     padding-left: 30px;
 }
 #PlayerHand{
-    padding-top: 100px;
     padding-left: 30px;
 }
