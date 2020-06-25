@@ -13,17 +13,17 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
-#line 1 "C:\Users\bryce\Documents\Projects\C-Project\Views\_ViewImports.cshtml"
+#line 1 "C:\Users\Fabian\Desktop\Casino\Views\_ViewImports.cshtml"
 using Casino;
 
 #line default
 #line hidden
-#line 2 "C:\Users\bryce\Documents\Projects\C-Project\Views\_ViewImports.cshtml"
+#line 2 "C:\Users\Fabian\Desktop\Casino\Views\_ViewImports.cshtml"
 using Casino.Models;
 
 #line default
 #line hidden
-#line 3 "C:\Users\bryce\Documents\Projects\C-Project\Views\_ViewImports.cshtml"
+#line 3 "C:\Users\Fabian\Desktop\Casino\Views\_ViewImports.cshtml"
 using Microsoft.AspNetCore.Http;
 
 #line default
@@ -88,7 +88,7 @@ using Microsoft.AspNetCore.Http;
         </div>
         <div class=""row mt-5"">
             <div class=""col-12"">
-                <h3 class=""text-center""><img class=""w-25 rounded-circle"" src=""https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQlYn-dpM7QoS7HJ0-j8TqiCxrEL6t25-XDSA&usqp=CAU"" alt=""""></h3>
+                <a href=""/blackjack""><h3 class=""text-center""><img class=""w-25 rounded-circle"" src=""https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQlYn-dpM7QoS7HJ0-j8TqiCxrEL6t25-XDSA&usqp=CAU"" alt=""""></h3></a>
             </div>
             <div class=""col-12"">
                 <h3 class=""text-center""><img class=""w-25 rounded-circle"" src=""https://us.123rf.com/450wm/makstrv/makstrv1711/makstrv171100011/89178539-poker-game-logo-emblem-.jpg?ver=6"" alt=""""></h3>

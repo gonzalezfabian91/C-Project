@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.blackjackcontainer{
+    background-image: url("https://pilot.flyingplaza.com/gamefiles/Classic/Multiplayer-Blackjack/img/table_blackjack.png");
+    height: 613px;
+    width: 1024px;
+}
+
+.body{
+    height: 557px;
+}
