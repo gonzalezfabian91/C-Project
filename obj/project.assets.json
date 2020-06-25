@@ -12149,23 +12149,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bryce\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/paul_kramer/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\bryce\\Documents\\Projects\\C-Project\\Casino.csproj",
+      "projectUniqueName": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Casino.csproj",
       "projectName": "Casino",
-      "projectPath": "c:\\Users\\bryce\\Documents\\Projects\\C-Project\\Casino.csproj",
-      "packagesPath": "C:\\Users\\bryce\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\bryce\\Documents\\Projects\\C-Project\\obj\\",
+      "projectPath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Casino.csproj",
+      "packagesPath": "/Users/paul_kramer/.nuget/packages/",
+      "outputPath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bryce\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/paul_kramer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
