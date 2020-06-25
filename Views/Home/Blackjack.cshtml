@@ -89,8 +89,17 @@
 
             function DealBlackJack()
             {
+                console.log("is this working")
                 Deck();
                 clearhands();
+                
+                let temp1 = Deal()
+                let temp2 = Deal()
+
+                // $("#playercard1").html('<h1>'+ temp1.Front +'</h1>');
+                //$("#playercard2").html('<h1>'+ temp1.Front +'</h1>');
+                //$("dealercard1").html('<h1>'+ temp1.Back +'</h1>');
+                //$("dealercard2").html('<h1>'+ temp1.Front +'</h1>');
                 
                 for(var i = 1; i < 3; i++){
                     let temp1 = Deal()
@@ -103,30 +112,30 @@
             }
 
             $('#Deal').on('click',()=>{
-                Deal();
+                DealBlackJack();
             });
         });
     </script>
     <h1 class="text-center">Welcome to Blackjack @Context.Session.GetString("FirstName")</h1>
     <div class="blackjackcontainer">
         <div class="body text-center">
-            <div class="DealerHand" id="Dealer">
-                <h3 class="dealertext">Dealers Hand</h3>
-                <div class="col-1 Cards" id="dealercard1"></div>
-                <div class="col-1 Cards" id="dealercard2"></div>
+            <h3 class=" text-white dealertext">Dealers Hand</h3>
+            <div class="row DealerHand" id="Dealer">
+                <div class=" text-white col-1 Cards" id="dealercard1"></div>
+                <div class=" text-white col-1 Cards" id="dealercard2"></div>
                 <div class="col-2"></div>
             </div>
-            <div class="PlayerHand" id="Player">
-                <h3 class="playertext">Players Hand</h3>
-                <div class="col-1 Cards" id="playercard1"></div>
-                <div class="col-1 Cards" id="playercard2"></div>
+            <h3 class="text-white playertext">Players Hand</h3>
+            <div class="row PlayerHand" id="Player">
+                <div class=" text-white col-1 Cards" id="playercard1"></div>
+                <div class=" text-white col-1 Cards" id="playercard2"></div>
                 <div class="col-2"></div>
             </div>
         </div>
         <div class="buttons text-center">
-            <a href="" class="btn btn-secondary ml-5 mr-5" id="Stay">Stay</a>
-            <a href="" class="btn btn-secondary ml-2 mr-5" id="Deal">Deal</a>
-            <a href="" class="btn btn-secondary mr-5" id="Hit">Hit</a>
+            <button id="Stay">Stay</button>
+            <button id="Deal">Deal</button>
+            <button id="Hit">Hit</button>
         </div>
     </div>
 </body>
