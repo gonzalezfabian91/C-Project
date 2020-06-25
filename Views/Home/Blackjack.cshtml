@@ -1,3 +1,5 @@
+@model User
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,8 +23,8 @@
                 deck = [];
                 let frontspade = "&#127137;"
                 let frontheart = "&#127153;"
-                let frontdiamond = "&#127137;"
-                let frontclub = "&#127137;"
+                let frontdiamond = "&#127169;"
+                let frontclub = "&#127185;"
                 let Val = 1;
 
                     for(var x = 0; x < stringval.length; x++)
@@ -158,6 +160,7 @@
         });
     </script>
     <h1 class="text-center">Welcome to Blackjack @Context.Session.GetString("FirstName")</h1>
+    <h3>Your Balance ($@Context.Session.GetInt32("Balance"))</h3>
     <div class="blackjackcontainer">
         <div class="body text-center">
             <h3 class=" text-white dealertext">Dealers Hand</h3>
@@ -166,7 +169,7 @@
                 <div class="text-white col-1 Cards" id="dealercard2"></div>
                 <div class="col-2"></div>
             </div>
-            <h3 class="text-white playertext">Players Hand</h3>
+            <h3 class="text-white playertext">@Context.Session.GetString("FirstName")'s Hand</h3>
             <div class="row PlayerHand" id="Player">
                 <div class="ml-5 text-white col-1 Cards" id="playercard1"></div>
                 <div class="text-white col-1 Cards" id="playercard2"></div>

@@ -59,6 +59,7 @@ namespace Casino.Controllers
 
                 HttpContext.Session.SetInt32("UserId", newUser.UserId);
                 HttpContext.Session.SetString("FirstName", newUser.FirstName);
+                HttpContext.Session.SetInt32("Balance", newUser.Balance);
                 return RedirectToAction("Dashboard", new { userId = newUser.UserId });
             }
             else

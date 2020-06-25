@@ -3,14 +3,16 @@ using System;
 using Casino.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Casino.Migrations
 {
     [DbContext(typeof(CasinoContext))]
-    partial class CasinoContextModelSnapshot : ModelSnapshot
+    [Migration("20200625184203_migrate")]
+    partial class migrate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -61,8 +63,6 @@ namespace Casino.Migrations
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd();
-
-                    b.Property<int>("Balance");
 
                     b.Property<DateTime>("CreatedAt");
 

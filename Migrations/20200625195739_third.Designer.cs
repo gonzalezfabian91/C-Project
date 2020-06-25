@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Casino.Migrations
 {
     [DbContext(typeof(CasinoContext))]
-    [Migration("20200625160039_addedbet")]
-    partial class addedbet
+    [Migration("20200625195739_third")]
+    partial class third
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -63,6 +63,8 @@ namespace Casino.Migrations
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<int>("Balance");
 
                     b.Property<DateTime>("CreatedAt");
 

@@ -37,9 +37,13 @@ namespace Casino.Models
         [Display(Name = "Confirm Password")]
         public string ConfirmPassword {get;set;}
 
+        public int Balance {get;set;} = 1000;
+
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
 
         
     }
 }
+
+        

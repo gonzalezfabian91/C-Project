@@ -21,7 +21,6 @@ namespace Casino
             Card card = new Card();
             card.MySuit = Card.SUIT.HEARTS;
             card.MyValue = Card.VALUE.ACE;
-            DeckOfCard dc = new DeckOfCard();
 
             Console.ReadKey();
         }

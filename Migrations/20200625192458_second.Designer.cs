@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Casino.Migrations
 {
     [DbContext(typeof(CasinoContext))]
-    [Migration("20200625162301_addedViewModel")]
-    partial class addedViewModel
+    [Migration("20200625192458_second")]
+    partial class second
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -63,6 +63,8 @@ namespace Casino.Migrations
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd();
+
+                    b.Property<double>("Balance");
 
                     b.Property<DateTime>("CreatedAt");
 
