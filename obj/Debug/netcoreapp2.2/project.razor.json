@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj",
+  "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Casino.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,68 +2961,68 @@
   "RootNamespace": "Casino",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\SevenCardStud.cshtml",
-      "TargetPath": "Views\\Home\\SevenCardStud.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\_Register.cshtml",
-      "TargetPath": "Views\\Home\\_Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\Dashboard.cshtml",
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/Dashboard.cshtml",
       "TargetPath": "Views\\Home\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\_Login.cshtml",
-      "TargetPath": "Views\\Home\\_Login.cshtml",
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\FiveCard.cshtml",
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/FiveCard.cshtml",
       "TargetPath": "Views\\Home\\FiveCard.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Home\\Blackjack.cshtml",
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/_Register.cshtml",
+      "TargetPath": "Views\\Home\\_Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/Blackjack.cshtml",
       "TargetPath": "Views\\Home\\Blackjack.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/SevenCardStud.cshtml",
+      "TargetPath": "Views\\Home\\SevenCardStud.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Shared/Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/_Login.cshtml",
+      "TargetPath": "Views\\Home\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Shared/_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Fabian\\Desktop\\Casino\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],

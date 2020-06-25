@@ -1,3 +1,4 @@
+using C_Project.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace Casino.Models
@@ -7,5 +8,7 @@ namespace Casino.Models
         public CasinoContext(DbContextOptions options) : base(options) {}
 
         public DbSet<User> Users {get;set;}
+        public DbSet<Account> Accounts {get;set;}
+        public DbSet<Bet> Bets{get;set;}
     }
 }

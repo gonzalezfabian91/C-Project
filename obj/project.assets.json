@@ -12149,23 +12149,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Fabian\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/paul_kramer/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj",
+      "projectUniqueName": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Casino.csproj",
       "projectName": "Casino",
-      "projectPath": "C:\\Users\\Fabian\\Desktop\\Casino\\Casino.csproj",
-      "packagesPath": "C:\\Users\\Fabian\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Fabian\\Desktop\\Casino\\obj\\",
+      "projectPath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Casino.csproj",
+      "packagesPath": "/Users/paul_kramer/.nuget/packages/",
+      "outputPath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Fabian\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/paul_kramer/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -12216,5 +12216,13 @@
         "warn": true
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file /Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/obj/Casino.csproj.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
