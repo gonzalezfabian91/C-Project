@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using C_Project.Models;
 
 namespace Casino.Models
 {
@@ -38,5 +39,7 @@ namespace Casino.Models
 
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
+
+        
     }
 }
