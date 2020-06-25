@@ -8,77 +8,125 @@
 </head>
 <body>
     <script>
-        var suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
-        var values = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"]
-        var deck = new Array();
+        $(document).ready(function(){
+            let suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
+            let stringval = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "C", "Queen", "King"]
+            
+            var deck;
+            var dealerblackjack;
+            var playerblackjack;
 
-        //this will create the deck of card from the var above
-        function CreateDeck()
-        {
-            deck = new Array();
-            for (var i = 0; i < values.length; i++)
+            //this will create the deck of card from the var above
+            function Deck(){
+                deck = [];
+                let frontspade = "&#127137;"
+                let frontheart = "&#127153;"
+                let frontdiamond = "&#127137;"
+                let frontclub = "&#127137;"
+                let Val = 1;
+
+                    for(var x = 0; x < stringval.length; x++)
+                    {
+                        var card = {Stringval:stringval[x],Suit:suits[0], Value:Val, Back:"&#127136;", Front:frontspade};
+                        deck.push(card);
+                        frontspade = "&#1271"+(37+Val)+";";
+                        Val++;
+                    }
+                    deck.splice(11,1)
+                    Val = 1;
+                    for(var x = 0; x < stringval.length; x++)
+                    {
+                        var card = {StringVal:stringval[x],Suit:suits[1], Value:Val, Back: "&#127136;", Front:frontheart};
+                        deck.push(card);
+                        frontheart = "&#1271"+(53+Val)+";"; 
+                        Val++;
+                    }
+                    deck.splice(24,1)
+                    Val = 1;
+                    for(var x = 0; x < stringval.length; x++)
+                    {
+                        var card = {StringVal:stringval[x],Suit:suits[2], Value:Val, Back: "&#127136;", Front:frontdiamond};
+                        deck.push(card);
+                        frontdiamond = "&#1271"+(69+Val)+";"; 
+                        Val++;
+                    }
+                    deck.splice(37,1)
+                    Val = 1;
+                    for(var x = 0; x < stringval.length; x++)
+                    {
+                        var card = {StringVal:stringval[x],Suit:suits[3], Value:Val, Back: "&#127136;", Front:frontclub};
+                        deck.push(card);
+                        frontclub = "&#1271"+(85+Val)+";"; 
+                        Val++;
+                    }
+                    deck.splice(50,1)
+                Shuffle();
+            }
+
+            function clearhands()
             {
-                for(var x = 0; x < suits.length; x++)
+                dealerblackjack = [];
+                playerblackjack = [];
+            }
+
+            function Deal()
+            {
+                return deck.pop();
+            }
+            //this will shuffle the deck of cards
+            function Shuffle()
+            {
+                for(var i = 0; i < 1000; i++)
                 {
-                    var amount = parseInt(values[i]);
-                    if (values[i] == "Jack" || values[i] == "Queen" || values[i] == "King")
-                        amount = 10;
-                    if (values[i] == "Ace")
-                        amount = 11;
-                    var card = {Value: values[i], Suit: suits[x], Amount: amount};
-                    deck.push(card);
+                    var location1 = Math.floor((Math.random() * deck.length));
+                    var location2 = Math.floor((Math.random() * deck.length));
+                    var temp = deck[location1];
+
+                    deck[location1] = deck[location2]
+                    deck[location2] = temp;
                 }
             }
-        }
 
-        //this will shuffle the deck of cards
-        function Shuffle()
-        {
-            for(var i = 0; i < 1000; i++)
+            function DealBlackJack()
             {
-                var location1 = Math.floor((Math.random() * deck.length));
-                var location2 = Math.floor((Math.random() * deck.length));
-                var temp = deck[location1];
-
-                deck[location1] = deck[location2]
-                deck[location2] = temp;
+                Deck();
+                clearhands();
+                
+                for(var i = 1; i < 3; i++){
+                    let temp1 = Deal()
+                    let temp2 = Deal()
+                    $("#playercard" + i + "").html('<h1>'+ temp1.Front +'</h1>');
+                    $("#dealercard"+ i + "").html('<h1>'+temp2.Back+'</h1>');
+                    dealerblackjack += temp2;
+                    playerblackjack += temp1;
+                }
             }
-        }
 
-        var player = new Array();
-        function createplayer(num)
-        {
-            players = new Array();
-            for(var i = 1; i <= num; i++)
-            {
-                var hand = new Array();
-                var player = {Name : @Context.Session.GetString("FirstName"), ID : @Context.Session.GetInt32("UserId"), Points: 0, Hand: hand};
-                players.push(player);
-            }
-        }
-
-
+            $('#Deal').on('click',()=>{
+                Deal();
+            });
+        });
     </script>
     <h1 class="text-center">Welcome to Blackjack @Context.Session.GetString("FirstName")</h1>
     <div class="blackjackcontainer">
         <div class="body text-center">
-            <div class="row DealerHand" id="Dealer">
-                <h3>Dealers Hand</h3>
+            <div class="DealerHand" id="Dealer">
+                <h3 class="dealertext">Dealers Hand</h3>
                 <div class="col-1 Cards" id="dealercard1"></div>
                 <div class="col-1 Cards" id="dealercard2"></div>
                 <div class="col-2"></div>
             </div>
-            <div class="row PlayerHand" id="Player">
-                <h3>@Context.Session.GetString("FirstName")'s Hand</h3>
+            <div class="PlayerHand" id="Player">
+                <h3 class="playertext">Players Hand</h3>
                 <div class="col-1 Cards" id="playercard1"></div>
                 <div class="col-1 Cards" id="playercard2"></div>
                 <div class="col-2"></div>
             </div>
         </div>
         <div class="buttons text-center">
-            <a href="" class="btn btn-secondary ml-5 mr-5" onclick="stay()">Stay</a>
-            <a href="" class="btn btn-secondary ml-2 mr-5" onclick="DealCards()">Deal</a>
-            <a href="" class="btn btn-secondary mr-5" onclick="Hit()">Hit</a>
+            <a href="" class="btn btn-secondary ml-5 mr-5" id="Stay">Stay</a>
+            <a href="" class="btn btn-secondary ml-2 mr-5" id="Deal">Deal</a>
+            <a href="" class="btn btn-secondary mr-5" id="Hit">Hit</a>
         </div>
     </div>
 </body>
