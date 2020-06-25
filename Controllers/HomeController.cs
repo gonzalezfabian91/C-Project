@@ -111,6 +111,11 @@ namespace Casino.Controllers
             }
             return View("Dashboard");
         }
+        [HttpGet("SevenCardStud")]
+        public IActionResult SevenCardStud()
+        {
+            return View ("SevenCardStud");
+        }
 
         [HttpGet("blackjack")]
         public IActionResult BlackJack()
