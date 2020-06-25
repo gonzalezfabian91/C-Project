@@ -58,6 +58,7 @@ namespace Casino.Controllers
                 db.SaveChanges();
 
                 HttpContext.Session.SetInt32("UserId", newUser.UserId);
+                HttpContext.Session.SetString("FirstName", newUser.FirstName);
                 return RedirectToAction("Dashboard", new{userId = newUser.UserId});
             }
             else
@@ -109,6 +110,16 @@ namespace Casino.Controllers
                 return RedirectToAction("Index");
             }
             return View("Dashboard");
+        }
+
+        [HttpGet("blackjack")]
+        public IActionResult BlackJack()
+        {
+            if (!isLoggedIn)
+            {
+                return RedirectToAction("Index");
+            }
+            return View("Blackjack");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
