@@ -2986,6 +2986,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/Blackjack.cshtml",
+      "TargetPath": "Views\\Home\\Blackjack.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/paul_kramer/Desktop/dojo_assignments/Projects/C-Project/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

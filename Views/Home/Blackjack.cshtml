@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackjack</title>
+    <link rel="stylesheet" href="css/blackstyle.css">
+</head>
+<body>
+    <script>
+        $(document).ready(function(){
+            let suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
+            let stringval = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "C", "Queen", "King"]
+            
+            var deck;
+            var dealerblackjack;
+            var playerblackjack;
+
+            //this will create the deck of card from the var above
+            function Deck(){
+                deck = [];
+                let frontspade = "&#127137;"
+                let frontheart = "&#127153;"
+                let frontdiamond = "&#127137;"
+                let frontclub = "&#127137;"
+                let Val = 1;
+
+                    for(var x = 0; x < stringval.length; x++)
+                    {
+                        var card = {Stringval:stringval[x],Suit:suits[0], Value:Val, Back:"&#127136;", Front:frontspade};
+                        deck.push(card);
+                        frontspade = "&#1271"+(37+Val)+";";
+                        Val++;
+                    }
+                    deck.splice(11,1)
+                    Val = 1;
+                    for(var x = 0; x < stringval.length; x++)
+                    {
+                        var card = {StringVal:stringval[x],Suit:suits[1], Value:Val, Back: "&#127136;", Front:frontheart};
+                        deck.push(card);
+                        frontheart = "&#1271"+(53+Val)+";"; 
+                        Val++;
+                    }
+                    deck.splice(24,1)
+                    Val = 1;
+                    for(var x = 0; x < stringval.length; x++)
+                    {
+                        var card = {StringVal:stringval[x],Suit:suits[2], Value:Val, Back: "&#127136;", Front:frontdiamond};
+                        deck.push(card);
+                        frontdiamond = "&#1271"+(69+Val)+";"; 
+                        Val++;
+                    }
+                    deck.splice(37,1)
+                    Val = 1;
+                    for(var x = 0; x < stringval.length; x++)
+                    {
+                        var card = {StringVal:stringval[x],Suit:suits[3], Value:Val, Back: "&#127136;", Front:frontclub};
+                        deck.push(card);
+                        frontclub = "&#1271"+(85+Val)+";"; 
+                        Val++;
+                    }
+                    deck.splice(50,1)
+                Shuffle();
+            }
+
+            function clearhands()
+            {
+                dealerblackjack = [];
+                playerblackjack = [];
+            }
+
+            function Deal()
+            {
+                return deck.pop();
+            }
+            //this will shuffle the deck of cards
+            function Shuffle()
+            {
+                for(var i = 0; i < 1000; i++)
+                {
+                    var location1 = Math.floor((Math.random() * deck.length));
+                    var location2 = Math.floor((Math.random() * deck.length));
+                    var temp = deck[location1];
+
+                    deck[location1] = deck[location2]
+                    deck[location2] = temp;
+                }
+            }
+
+            function DealBlackJack()
+            {
+                console.log("is this working")
+                Deck();
+                clearhands();
+                
+                let temp1 = Deal()
+                let temp2 = Deal()
+
+                // $("#playercard1").html('<h1>'+ temp1.Front +'</h1>');
+                //$("#playercard2").html('<h1>'+ temp1.Front +'</h1>');
+                //$("dealercard1").html('<h1>'+ temp1.Back +'</h1>');
+                //$("dealercard2").html('<h1>'+ temp1.Front +'</h1>');
+                
+                for(var i = 1; i < 3; i++){
+                    let temp1 = Deal()
+                    let temp2 = Deal()
+                    $("#playercard" + i + "").html('<h1>'+ temp1.Front +'</h1>');
+                    $("#dealercard"+ i + "").html('<h1>'+temp2.Back+'</h1>');
+                    dealerblackjack += temp2;
+                    playerblackjack += temp1;
+                }
+            }
+
+            $('#Deal').on('click',()=>{
+                DealBlackJack();
+            });
+        });
+    </script>
+    <h1 class="text-center">Welcome to Blackjack @Context.Session.GetString("FirstName")</h1>
+    <div class="blackjackcontainer">
+        <div class="body text-center">
+            <h3 class=" text-white dealertext">Dealers Hand</h3>
+            <div class="row DealerHand" id="Dealer">
+                <div class=" text-white col-1 Cards" id="dealercard1"></div>
+                <div class=" text-white col-1 Cards" id="dealercard2"></div>
+                <div class="col-2"></div>
+            </div>
+            <h3 class="text-white playertext">Players Hand</h3>
+            <div class="row PlayerHand" id="Player">
+                <div class=" text-white col-1 Cards" id="playercard1"></div>
+                <div class=" text-white col-1 Cards" id="playercard2"></div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+        <div class="buttons text-center">
+            <button id="Stay">Stay</button>
+            <button id="Deal">Deal</button>
+            <button id="Hit">Hit</button>
+        </div>
+    </div>
+</body>
+</html> 
