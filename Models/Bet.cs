@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace C_Project.Models
+namespace Casino.Models
 {
     public class Bet
     {

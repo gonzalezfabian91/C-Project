@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Casino.Models;
 
-namespace C_Project.Models
+namespace Casino.Models
 {
     public class Account
     {

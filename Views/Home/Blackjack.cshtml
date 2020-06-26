@@ -1,4 +1,4 @@
-@model User
+@model Bet
 
 <!DOCTYPE html>
 <html lang="en">
@@ -13,6 +13,32 @@
         $(document).ready(function(){
             let suits = ["Spades", "Hearts", "Diamonds", "Clubs"];
             let stringval = ["Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "C", "Queen", "King"]
+
+            //var cardValue = {
+                //"Ace": 11,
+                //"2": 2,
+                //"3": 3,
+                //"4": 4,
+                //"5": 5,
+                //"6": 6,
+                //"7": 7,
+                //"8": 8,
+                //"9": 9,
+                //"10": 10,
+                //"Jack": 10,
+                //"Queen": 10,
+                //"King": 10
+            //};
+
+            //function Evaluate(){
+                //let sum = 0;
+
+                //for(i = 1; i < playerblackjack.length; i++)
+                //{
+                    //sum += cardValue
+                //}
+                //if (sum < 21)
+            //}
             
             var deck;
             var dealerblackjack;
@@ -163,7 +189,7 @@
     <h3>Your Balance ($@Context.Session.GetInt32("Balance"))</h3>
     <div class="blackjackcontainer">
         <div class="body text-center">
-            <h3 class=" text-white dealertext">Dealers Hand</h3>
+            <h3 class="text-white dealertext">Dealers Hand</h3>
             <div class="row DealerHand" id="Dealer">
                 <div class="ml-5 text-white col-1 Cards" id="dealercard1"></div>
                 <div class="text-white col-1 Cards" id="dealercard2"></div>
@@ -181,8 +207,9 @@
             </div>
         </div>
         <div class="buttons row text-center">
-            <div class="bet">
+            <div class="row bet">
                 <button style="button" class="btn btn-secondary" id="Bet">Bet</button>
+                <input asp-for="BetAmount" asp-controller="Home" class="form-control col-6">
             </div>
             <div class="staybutton"></div>
             <div class="dealbutton"></div>
